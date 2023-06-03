@@ -16,13 +16,14 @@
 
 <body>
   <!-- NAVIGATION -->
+
   <header class="header">
     <div class="container header-container">
       <nav class="header-nav">
         <a href="./index.html" class="header-logo-web link"> Web <span class="header-logo-studio">Studio</span>
         </a>
         <ul class="header-nav-list list">
-          <li><a class="header-nav-item link" href="./index.html">Studio</a></li>
+          <li><a class="header-nav-item current link" href="./index.html">Studio</a></li>
           <li><a class="header-nav-item link" href="./portfolio.html">Portfolio</a></li>
           <li><a class="header-nav-item link" href="">Contacts</a></li>
         </ul>
@@ -36,18 +37,21 @@
     </div>
   </header>
   <!-- MAIN -->
+
   <main>
     <!-- HERO -->
+
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Effective Solutions
           for Your Business</h1>
-        <button type="button" class="hero-button">
+        <button type="button" class="hero-button" data-modal-open>
           Order Service</button>
       </div>
     </section>
 
     <!-- Section 2 -->
+
     <section class="features">
       <div class="container features-container">
         <h2 class="visually-hidden">features</h2>
@@ -101,6 +105,7 @@
       </div>
     </section>
     <!-- Section 3 -->
+
     <section class="specialty">
       <div class="container">
         <h2 class="specialty-title">What are we doing</h2>
@@ -112,6 +117,7 @@
       </div>
     </section>
     <!-- Section 4 -->
+
     <section class="team">
       <div class="container">
         <h2 class="team-title">Our Team</h2>
@@ -375,6 +381,18 @@
       </div>
     </div>
   </footer>
+
+  <!------------------------ MODAL WINDOW --------------------------->
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal-window">
+      <button type="button" class="close-button" data-modal-close>
+        <svg class="icon-close-button" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-button"></use>
+        </svg>
+      </button>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
